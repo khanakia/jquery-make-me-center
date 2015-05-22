@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Center Horizontal Only - Default</title>
+	<script src="assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/jquery.makemecenter.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/prism.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="assets/css/prism.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("div.box").makemecenter({
+				vertical:false
+			});
+
+		})
+	</script>
+</head>
+<body>
+<div class="box">
+	<h3 class="text-center">Center Me Horizontally</h3>
+<pre><code class="language-javascript">
+$(document).ready(function(){ 
+	$("div.box").makemecenter({
+		vertical:false
+	});
+})
+</code></pre>	
+</div>
+</body>
+</html>

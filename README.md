@@ -1,8 +1,7 @@
 # jQuery Make Me Center
-A jQuery plugin to position elements vertically and horizontally center realtive to windows or some other element. Not only you can center the element on page but you can also add Margin and Padding to your element and that plugin will take care of it and will keep your eleement always center vertically and horizontally.
+A jQuery plugin to position elements vertically and horizontally center relative to windows or some other element. Not only you can center the element on page but you can also add Margin and Padding to your element and that plugin will take care of it and will keep your element always center vertically and horizontally.
 
-Lets take an example we have popup contact form and we want to keep it center that's ok but we have one problem that we want to add some padding and margin to that Popup Contact Form on Mobile devices so it will not stuck to the window.
-To achieve this we usually take some more inner div containers and add padding and margin to inner containers in order to keep popup positioned perfectly always. But using this plugin you cann add margin and padding to the same element instead of inner elements and it will always be in center position.
+Lets take an example we have popup contact form and we want to keep it center that's ok but we have one problem that we want to add some padding and margin to that Popup Contact Form on Mobile devices so it will not stuck to the window. To achieve this we usually take some more inner div containers and add padding and margin to inner containers in order to keep popup positioned perfectly always. But using this plugin you can add margin and padding to the same element instead of inner elements and it will always be in center position.
 
 ## Installation
 - Include `jquery.makemecenter.js` after the main jquery js files

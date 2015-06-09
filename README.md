@@ -7,7 +7,9 @@ Lets take an example we have popup contact form and we want to keep it center th
 - Include `jquery.makemecenter.js` after the main jquery js files
 
 ## Options
-* **horizontal**  `true|false`   
+* **position**  `absolute|fixed|static`   
+	* Sepecify that element position **default value:** `absolute`
+* **horizontal**  `true|false`
 	* Sepecify that element should be horizontally center or not **default value:** `true`
 * **vertical**  `true|false`   
 	* Sepecify that element should be vertical center or not **default value:** `true`
@@ -29,6 +31,13 @@ Lets take an example we have popup contact form and we want to keep it center th
 	* Define Margin from Top on element **default value:** `0`
 * **paddingBottom**
 	* Define Margin from Bottom on element **default value:** `0`
+* **is_onload**
+	* Center Element on Page Load **default value:** `true`
+* **is_onresize**
+	* Center Element on Resize **default value:** `true`
+* **is_animate**
+	* Animate Element while Centering it **default value:** `false`
+
 
 ## Some Usage
 
@@ -40,14 +49,23 @@ $("div.box").makemecenter();
 #### All options at a glance
 ```javascript
 $("div.box").makemecenter({
-    vertical:true,
-    horizontal:true,
-	marginLeft:10,
-	marginRight: 10,
-	paddingLeft: 10,
-	paddingRight: 10,
-	paddingTop: 10,
-	paddingBottom: 10
+		position : "absolute",
+		horizontal : true,
+		vertical : true,
+		parentRelative : window,  // Define Parent against which elements needs to be centered
+		complete : null,
+		
+		marginLeft : null,
+		marginRight : null,
+		marginTop : null,
+		paddingLeft : null,
+		paddingRight : null,
+		paddingTop : null,
+		paddingBottom : null,
+
+		is_onload : true,    // Center Element on Page Load
+		is_onresize : true,  // Center Element on Resize
+		is_animate : false,  // Animate Element while Centering it
 });
 ```
 

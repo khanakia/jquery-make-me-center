@@ -1,14 +1,15 @@
 # jQuery Make Me Center
-A jQuery plugin to position elements vertically and horizontally center realtive to windows or some other element. Not only you can center the element on page but you can also add Margin and Padding to your element and that plugin will take care of it and will keep your eleement always center vertically and horizontally.
+A jQuery plugin to position elements vertically and horizontally center relative to windows or some other element. Not only you can center the element on page but you can also add Margin and Padding to your element and that plugin will take care of it and will keep your element always center vertically and horizontally.
 
-Lets take an example we have popup contact form and we want to keep it center that's ok but we have one problem that we want to add some padding and margin to that Popup Contact Form on Mobile devices so it will not stuck to the window.
-To achieve this we usually take some more inner div containers and add padding and margin to inner containers in order to keep popup positioned perfectly always. But using this plugin you cann add margin and padding to the same element instead of inner elements and it will always be in center position.
+Lets take an example we have popup contact form and we want to keep it center that's ok but we have one problem that we want to add some padding and margin to that Popup Contact Form on Mobile devices so it will not stuck to the window. To achieve this we usually take some more inner div containers and add padding and margin to inner containers in order to keep popup positioned perfectly always. But using this plugin you can add margin and padding to the same element instead of inner elements and it will always be in center position.
 
 ## Installation
 - Include `jquery.makemecenter.js` after the main jquery js files
 
 ## Options
-* **horizontal**  `true|false`   
+* **position**  `absolute|fixed|static`   
+	* Sepecify that element position **default value:** `absolute`
+* **horizontal**  `true|false`
 	* Sepecify that element should be horizontally center or not **default value:** `true`
 * **vertical**  `true|false`   
 	* Sepecify that element should be vertical center or not **default value:** `true`
@@ -30,6 +31,13 @@ To achieve this we usually take some more inner div containers and add padding a
 	* Define Margin from Top on element **default value:** `0`
 * **paddingBottom**
 	* Define Margin from Bottom on element **default value:** `0`
+* **is_onload**
+	* Center Element on Page Load **default value:** `true`
+* **is_onresize**
+	* Center Element on Resize **default value:** `true`
+* **is_animate**
+	* Animate Element while Centering it **default value:** `false`
+
 
 ## Some Usage
 
@@ -41,14 +49,23 @@ $("div.box").makemecenter();
 #### All options at a glance
 ```javascript
 $("div.box").makemecenter({
-    vertical:true,
-    horizontal:true,
-	marginLeft:10,
-	marginRight: 10,
-	paddingLeft: 10,
-	paddingRight: 10,
-	paddingTop: 10,
-	paddingBottom: 10
+		position : "absolute",
+		horizontal : true,
+		vertical : true,
+		parentRelative : window,  // Define Parent against which elements needs to be centered
+		complete : null,
+		
+		marginLeft : null,
+		marginRight : null,
+		marginTop : null,
+		paddingLeft : null,
+		paddingRight : null,
+		paddingTop : null,
+		paddingBottom : null,
+
+		is_onload : true,    // Center Element on Page Load
+		is_onresize : true,  // Center Element on Resize
+		is_animate : false,  // Animate Element while Centering it
 });
 ```
 

@@ -1,0 +1,3 @@
+== VERSION 0.1.1 ==
+- Added Animation Support
+- Added Dynamic Position

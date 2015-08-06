@@ -4,7 +4,23 @@ A jQuery plugin to position elements vertically and horizontally center relative
 Lets take an example we have popup contact form and we want to keep it center that's ok but we have one problem that we want to add some padding and margin to that Popup Contact Form on Mobile devices so it will not stuck to the window. To achieve this we usually take some more inner div containers and add padding and margin to inner containers in order to keep popup positioned perfectly always. But using this plugin you can add margin and padding to the same element instead of inner elements and it will always be in center position.
 
 ## Installation
+
+### npm
+```javascript
+	npm install jquery-make-me-center --save
+```
+
+### bower
+```javascript
+	bower install jquery-make-me-center --save
+```
+
+### manual
+donwload the js file to your project, and link
+
+```javascript
 - Include `jquery.makemecenter.js` after the main jquery js files
+```
 
 ## Options
 * **position**  `absolute|fixed|static`   

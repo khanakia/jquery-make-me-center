@@ -1,0 +1,19 @@
+{
+  "name": "jquery-make-me-center",
+  "version": "1.0.0",
+  "description": "A jQuery plugin to position elements vertically and horizontally center with support Margin and Padding",
+  "main": "jquery.makemecenter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tenbullstech/jquery-make-me-center"
+  },
+  "author": "Aman Bansal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tenbullstech/jquery-make-me-center/issues"
+  },
+  "homepage": "https://github.com/tenbullstech/jquery-make-me-center"
+}

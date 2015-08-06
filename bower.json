@@ -1,0 +1,22 @@
+{
+  "name": "jquery-make-me-center",
+  "version": "0.1.1",
+  "homepage": "https://github.com/tenbullstech/jquery-make-me-center",
+  "main": "jquery.makemecenter.js",
+  "keywords": [
+    "color",
+    "animation",
+    "center"
+  ],
+  "authors": [
+    "Aman Bansal"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

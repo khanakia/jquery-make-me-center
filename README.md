@@ -19,7 +19,7 @@ bower install jquery-make-me-center --save
 donwload the js file to your project, and link
 
 ```javascript
-- Include `jquery.makemecenter.js` after the main jquery js files
+<script type="text/javascript" src="jquery.makemecenter.js"></script>
 ```
 
 ## Options

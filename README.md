@@ -7,12 +7,12 @@ Lets take an example we have popup contact form and we want to keep it center th
 
 ### npm
 ```javascript
-	npm install jquery-make-me-center --save
+npm install jquery-make-me-center --save
 ```
 
 ### bower
 ```javascript
-	bower install jquery-make-me-center --save
+bower install jquery-make-me-center --save
 ```
 
 ### manual

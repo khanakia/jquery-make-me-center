@@ -38,7 +38,6 @@
 
 		var self = this;
 
-
 		$.fn.makemecenter.destroy = function() {
             return self.each(function(){
         		$(window).off('resize.makemecenter');
@@ -54,14 +53,12 @@
 				position : "relative"
 			});
 
-
 			// Clear Element Margin and Padding to calculate actual dimensions
 			elem.css({
 				margin : "",
 				padding : "",
 				// display : "block",
 			});
-
 
 			elem.css({
 				position : settings.position,
@@ -73,7 +70,6 @@
 				"padding-top" : settings.paddingTop,
 				"padding-bottom" : settings.paddingBottom,
 			});
-
 
 			var contentWidth = elem.width();  // Getting applied element width before any margin and padding
 			//console.log(contentWidth);
@@ -122,7 +118,6 @@
 			}
 		}
 
-
 		function makeitcenter(self){
 			// console.log(self);
 			// if (undefined==self) {
@@ -133,7 +128,6 @@
 				adjustposition($this);
 			});
 		}
-
 
 		function detect_datachange(self){
 
@@ -160,18 +154,11 @@
 				 
 				// pass in the target node, as well as the observer options
 				observer.observe(this, config);
-
-				
 			});
-
 		}
 		
 		// Default Execution on Initiation
 		makeitcenter(self);
-
-		// if (settings.is_onload) {
-		// 	detect_datachange(self);
-		// }
 
 		if (settings.is_onload) {
 			$(window).load(function () {
@@ -179,18 +166,10 @@
 		  		//window.dispatchEvent(evt);
 			});
 		}
-
 		if (settings.is_onresize) {
 			$(window).on("resize.makemecenter",function() {
 				makeitcenter(self);
 			});
 		}
-
-
-
 	}
-
-
-	
-
-}(jQuery))
+}(jQuery));
